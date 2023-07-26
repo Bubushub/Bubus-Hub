@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<link rel="icon" type="img" href="logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bubu's Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<style>
+  @media only screen and (max-width: 1920px) {
+  h1 {
+    font-size: 150px;
+    text-transform:initial;
+    text-shadow: black 10PX 10PX 5PX;
+    text-size-adjust:inherit
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 100px;
+    text-transform:initial;
+    text-shadow: black 10PX 10PX 5PX;
+    text-size-adjust:inherit
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #logo {
+  width: 45%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #logo {
+  width: 30%;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #logo {
+  width: 30%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #logo {
+  width: 45%;
+  }
+}
+
+
+</style>
+
+  </head>
+  <body>
+    <header>
+    <header id="navbar">
+        <nav class="navbar-container container">
+          <a href="index.html" class="home-link">
+            <div id="logo">
+            <img src="logo1.png" style="width: 30%;border-radius: 100%;">
+        </div>
+          </a>
+          <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+                <a href="index.html">
+                    <button type="button" class="btn btn-secondary">Home</button>
+                </a>
+               
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="action.html">Action</a></li>
+                  <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+                  <li><a class="dropdown-item" href="anime.html">Anime</a></li>
+                  <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+                  <li><a class="dropdown-item" href="indie.html">Indie</a></li>
+                  <li><a class="dropdown-item" href="multiplayer.html">Multiplayer</a></li>
+                  <li><a class="dropdown-item" href="openworld.html">Open World</a></li>
+                  <li><a class="dropdown-item" href="racing.html">Racing</a></li>
+                  <li><a class="dropdown-item" href="shooters.html">Shooters</a></li>
+                  <li><a class="dropdown-item" href="simulation.html">Simulation</a></li>
+                  <li><a class="dropdown-item" href="sport.html">Sport</a></li>
+                  <li><a class="dropdown-item" href="strategy.html">Strategy</a></li>
+                  <li><a class="dropdown-item" href="virtualreality.html">Virtual Reality</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-secondary">Games</button>
+              <button type="button" class="btn btn-secondary">Popular</button>
+              <button type="button" class="btn btn-secondary">Discord</button>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </header>
+      <script>
+        const navbarToggle = navbar.querySelector("#navbar-toggle");
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+const toggleNavbarVisibility = () => {
+  isNavbarExpanded = !isNavbarExpanded;
+  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
+
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);
+    </script>
+<BR>
+    <BR>
+    <div class="top">
+        <div class="tittle">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Bubu's Hub</h1>
+        </div>
+        
+
+
+    </div>
+<div class="colums1">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+        <br>
+        <section class="product"> 
+          <h2 class="product-category">Popular games</h2>
+          <button class="pre-btn"><img src="arrow.png" alt=""></button>
+          <button class="nxt-btn"><img src="arrow.png" alt=""></button>
+          <div class="product-container">
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag"></span>
+                      <img src="https://thumbnails.pcgamingwiki.com/8/88/Rust_header.jpg/300px-Rust_header.jpg" class="product-thumb" alt="">
+                      <button class="card-btn"></button>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">Rust</h2>
+                      <p class="product-short-description">25 GB</p>
+                      <span class="price"></span><span class="actual-price"></span>
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag"></span>
+                      <img src="https://thumbnails.pcgamingwiki.com/1/13/Forza_Horizon_5_cover.jpg/300px-Forza_Horizon_5_cover.jpg" class="product-thumb" alt="">
+                      <button class="card-btn"></button>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">Horizon 5</h2>
+                      <p class="product-short-description">105 GB</p>
+                      <span class="price"></span><span class="actual-price"></span>
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag"></span>
+                      <img src="https://thumbnails.pcgamingwiki.com/8/80/The_Sims_4_Cover.jpg/300px-The_Sims_4_Cover.jpg" class="product-thumb" alt="">
+                      <button class="card-btn"></button>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">Sims 4</h2>
+                      <p class="product-short-description">15 GB</p>
+                      <span class="price"></span><span class="actual-price"></span>
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag"></span>
+                      <a href="beamng.html">
+                      <img src="https://thumbnails.pcgamingwiki.com/f/f5/BeamNG.drive_cover.jpg/300px-BeamNG.drive_cover.jpg" class="product-thumb" alt="">
+                      <button class="card-btn"></button>
+                      </a>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">Beamng</h2>
+                      <p class="product-short-description">45 GB</p>
+                      <span class="price"></span><span class="actual-price"></span>
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag"></span>
+                      <img src="https://thumbnails.pcgamingwiki.com/a/af/Friday_the_13th_The_Game_cover.jpg/300px-Friday_the_13th_The_Game_cover.jpg" class="product-thumb" alt="">
+                      <button class="card-btn"></button>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">Friday 13</h2>
+                      <p class="product-short-description"> 5 GB</p>
+                      <span class="price"></span><span class="actual-price"></span>
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag"></span>
+                      <img src="https://thumbnails.pcgamingwiki.com/6/63/F1_22_cover.jpg/300px-F1_22_cover.jpg" class="product-thumb" alt="">
+                      <button class="card-btn"></button>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">F1 22</h2>
+                      <p class="product-short-description">80 GB</p>
+                      <span class="price"></span><span class="actual-price"></span>
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag"></span>
+                      <img src="https://thumbnails.pcgamingwiki.com/b/bd/F1_2020_cover.jpg/300px-F1_2020_cover.jpg" class="product-thumb" alt="">
+                      <button class="card-btn"></button>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">F1 2020</h2>
+                      <p class="product-short-description">80 GB</p>
+                      <span class="price"></span><span class="actual-price"></span>
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag"></span>
+                      <img src="https://thumbnails.pcgamingwiki.com/3/39/Cyberpunk_2077_cover.png/300px-Cyberpunk_2077_cover.png" class="product-thumb" alt="">
+                      <button class="card-btn"></button>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">Cyberpunk</h2>
+                      <p class="product-short-description">70 GB</p>
+                      <span class="price"></span><span class="actual-price"></span>
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag"></span>
+                      <img src="https://thumbnails.pcgamingwiki.com/7/77/Marvel%27s_Spider-Man_Remastered_cover.jpg/300px-Marvel%27s_Spider-Man_Remastered_cover.jpg" class="product-thumb" alt="">
+                      <button class="card-btn"></button>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">Spider-man</h2>
+                      <p class="product-short-description">75 GB</p>
+                      <span class="price"></span><span class="actual-price"></span>
+                  </div>
+              </div>
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag"></span>
+                      <img src="https://thumbnails.pcgamingwiki.com/8/88/Marvel%27s_Spider-Man_-_Miles_Morales_cover.png/300px-Marvel%27s_Spider-Man_-_Miles_Morales_cover.png" class="product-thumb" alt="">
+                      <button class="card-btn"></button>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">Spider-man 2</h2>
+                      <p class="product-short-description">75 GB</p>
+                      <span class="price"></span><span class="actual-price"></span>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br>
+      <script src="java.js"></script>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
